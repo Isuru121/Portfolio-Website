@@ -62,6 +62,13 @@ nav{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.logo a:hover {
+    color: #171717;
+}
+
+.logo a span:hover{
+    color: #0ea5e9;
+}
 
 ul li{
     display: inline-block;
@@ -102,7 +109,7 @@ ul li a:hover{
 }
 
 .client_info h1{
-    color: #fff;
+    color: #0ea5e9;
     font-size: 30px;
     margin: 10px;
 }
@@ -148,11 +155,12 @@ ul li a:hover{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50px;
-    right: 10px;
-    width: 500px;
-    height: 500px;
+    top: 380px;
+    right: 350px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    zoom: 0.8;
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.671);
     transition: transform 0.3s ease;
@@ -418,16 +426,20 @@ button:hover{
     .skills-container, .activities-achievements {
         flex-direction: column;
         grid-template-columns: 1fr;
+    }     
+
+    .hero-img {
+        width: 4500px;
+        height: 450px;
+        align-items: left;
+        transform: translateX(-30%);
+        transform: translateY(-15%);
     }
-            
+
     .client_info h2 {
         font-size: 2.8rem;
     }
-
-    .hero-img {
-        width: 280px;
-        height: 280px;
-    }
+ 
 
     .about{
         height: 1100px;
@@ -577,10 +589,20 @@ button:hover{
     margin-bottom: 15px;
     color: #0ea5e9;
 }
+
+.project-content h4{
+    line-height: 1px;
+    margin-bottom: 25px;
+    color: #0ea5e9;
+} 
         
 .project-content p {
     margin-bottom: 20px;
     color: rgb(155, 151, 151);
+}
+
+.project-content a:hover{
+    color: #0ea5e9;
 }
 
 .tech-stack {
